@@ -1,0 +1,70 @@
+//Remove old interstages
+!PART[decouplersv05]{}
+!PART[decouplersvblack]{}
+!PART[decoupvector]{}
+
+@PART[desacopladorsat1]:FOR[ProceduralFairings]
+{
+    %category = Aero
+	InterstageBase = TRUE
+    !mesh = DELETE
+	MODEL
+    {
+        model = AIES_Aerospace/Structure/AIESdesacoplador sat1/model
+        scale = 1.7337,1,1.7337
+        position = 0,0,0
+    }
+	%rescaleFactor = 1
+    %scale = 1
+    
+    %node_stack_top = 0.0, 0.119, 0.0, 0.0, 1.0, 0.0, 0
+    %node_stack_top1 = 0.0, 0.4, 0.0, 0.0, 1.0, 0.0, 1
+	%node_stack_bottom = 0.0, -0.037, 0.0, 0.0, -1.0, 0.0, 1
+    
+    @title = IB - AIES SAT-1 Interstage Base
+    @description = Open structure interstage base for hot-ignition stages.
+	@mass = 0
+    !MODULE,* {}
+}
+@PART[desacopladorsat2]:FOR[ProceduralFairings]
+{
+    %category = Aero
+	InterstageBase = TRUE
+    !mesh = DELETE
+	MODEL
+    {
+        model = AIES_Aerospace/Structure/AIESdesacoplador sat2/model
+        scale = 0.8884,0.3,0.8884
+        position = 0,0,0
+    }
+	%rescaleFactor = 1
+    %scale = 1
+    %node_stack_top = 0.0, 0.119, 0.0, 0.0, 1.0, 0.0, 0
+    %node_stack_top1 = 0.0, 0.4, 0.0, 0.0, 1.0, 0.0, 1
+	%node_stack_bottom = 0.0, -0.037, 0.0, 0.0, -1.0, 0.0, 1
+    
+    @title = IB - AIES SAT-2 Interstage Base
+    @description = Open structure interstage base for hot-ignition stages.
+	@mass = 0
+    !MODULE,* {}
+}
+@PART[desacopladorsat3]:FOR[ProceduralFairings]
+{
+    %category = Aero
+	InterstageBase = TRUE
+    !mesh = DELETE
+	MODEL
+    {
+        model = AIES_Aerospace/Structure/AIESdesacoplador sat3/model
+        scale = 0.8766,0.8766,0.8766
+        position = 0,0,0
+    }
+	%rescaleFactor = 1
+    %scale = 1
+    %node_stack_top = 0.0, 0.119, 0.0, 0.0, 1.0, 0.0, 0
+    %node_stack_top1 = 0.0, 0.4, 0.0, 0.0, 1.0, 0.0, 1
+	%node_stack_bottom = 0.0, -0.037, 0.0, 0.0, -1.0, 0.0, 1
+    
+    @title = IB - AIES SAT-3 Interstage Base
+	@mass = 0
+}

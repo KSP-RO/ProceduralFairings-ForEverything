@@ -1,0 +1,65 @@
+//Remove old fairings, see if we can convert these textures to procedurals.
+!PART[sep1a1ur5]{}
+!PART[t1000v4]{}
+!PART[t1500v4]{}
+!PART[t2000v4]{}
+!PART[t3000r20c]{}
+!PART[top100a1ur5]{}
+!PART[top100a1ur5b]{}
+!PART[top500a1ur5]{}
+
+@PART[basepunta1ur5]:FOR[ProceduralFairings]
+{
+	FairingBase = TRUE
+    %category = Aero
+    !mesh = DELETE
+	MODEL
+    {
+        model = AIES_Aerospace/Structure/AIES puntbase a1ur5/model
+        scale = 0.8717,0.2615,0.8717
+        position = 0,0,0
+    }
+	%rescaleFactor = 1
+    %scale = 1
+    !node_stack_connect1 = DELETE
+    !node_stack_connect2 = DELETE
+
+    %node_stack_top = 0.0, 0, 0.0, 0.0, 1.0, 0.0, 0
+	%node_stack_bottom = 0.0, -0.151, 0.0, 0.0, -1.0, 0.0, 1
+
+    @title = FB - AIES A1-RU5 Fairing Base
+    @description = Basis for the protective fairings (TOP-500 and TOP-100).
+	@mass = 0
+    !MODULE,* {}
+}
+@PART[basepuntv2r10]:FOR[ProceduralFairings]
+{
+	FairingBase = TRUE
+    %category = Aero
+    !mesh = DELETE
+	MODEL
+    {
+        model = AIES_Aerospace/Structure/AIES puntbase v2r10/model
+        scale = 1,0.3,1
+        position = 0,0,0
+    }
+    %rescaleFactor = 1
+    %scale = 1
+    !node_stack_connect1 = DELETE
+    !node_stack_connect2 = DELETE
+
+    !node_stack_top = DELETE
+    !node_stack_top = DELETE
+    !node_stack_bottom = DELETE
+    
+    %node_stack_top = 0.0, 0, 0.0, 0.0, 1.0, 0.0, 0
+	%node_stack_bottom = 0.0, -0.151, 0.0, 0.0, -1.0, 0.0, 1
+    
+
+    %node_stack_top = 0.0, 0.035, 0.0, 0.0, 1.0, 0.0, 0
+	%node_stack_bottom = 0.0, -0.133, 0.0, 0.0, -1.0, 0.0, 1
+    @title = FB - AIES V2-R10 Fairing Base
+    @description = Basis for protective fairings (TOP-1000, TOP-1500, TOP-2000).
+	@mass = 0
+    !MODULE,* {}
+}
