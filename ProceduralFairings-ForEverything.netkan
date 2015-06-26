@@ -1,15 +1,15 @@
 {
-    "spec_version"	:	1,
-    "identifier"	:	"ProceduralFairings-ForEverything",
-    "$kref"		    :	"#/ckan/github/Felger/ProceduralFairings-ForEverything",
-    "name"		    :	"Procedural Fairings - For Everything!",
-    "abstract"		:	"Add those awesome Procedural Fairings to everything with a fairing! Supported mods shown in suggestions.",
-    "license"		:	"CC-BY-3.0",
-    "ksp_version"	:	"1.0",
-	"resources"     : {
+    "spec_version"  :    1,
+    "identifier"    :    "ProceduralFairings-ForEverything",
+    "$kref"         :    "#/ckan/github/Felger/ProceduralFairings-ForEverything",
+    "name"          :    "Procedural Fairings - For Everything!",
+    "abstract"      :    "Add those awesome Procedural Fairings to everything with a fairing! Supported mods shown in suggestions.",
+    "license"       :    "CC-BY-3.0",
+    "ksp_version"   :    "1.0",
+    "resources"     : {
         "homepage"  : "http://forum.kerbalspaceprogram.com/threads/126788"
     },
-    "provides"      : [ "PFTextures" ]
+    "provides"      : [ "PFTextures" ],
     "depends"       : [
         { "name"    : "ModuleManager" },
         { "name"    : "FirespitterCore" },
@@ -22,8 +22,8 @@
     ],
     "install"  : [
         {
-            "file"       : "GameData/ProceduralFairings-ForEverything",
-            "install_to" : "GameData"
+            "file"          : "GameData/ProceduralFairings-ForEverything",
+            "install_to"    : "GameData"
         }
     ]
 }
