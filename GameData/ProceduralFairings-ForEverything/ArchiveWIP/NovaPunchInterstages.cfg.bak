@@ -1,0 +1,68 @@
+//Remove parts that are just duplicates.
+!PART[NP_fairingSize1] {}
+!PART[NP_fairingSize2] {}
+!PART[NP_fairingSize3] {}
+!PART[NP_fairingSize4] {}
+
+//============================================================================//
+
+//Interstage 5m
+
++PART[KzInterstageAdapter2]:FOR[zPFFE]
+{
+     @name = NP_PF_Interstage_5
+     @MODEL
+     {
+         %model = NovaPunch2/Parts/Decouplers/Decoupler_5m_stack/model
+         %scale = 0.2184,0.2184,0.2184
+         %position = 0,-0.028,0
+     }
+    
+     %node_stack_top = 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0
+     %node_stack_bottom = 0.0, -0.060, 0.0, 0.0, -1.0, 0.0, 1
+     @title = NP HS-500 Interstage Base
+     @description = Heaviest of the HS series of interstage supports.
+}
++PART[KzInterstageAdapter2]:FOR[zPFFE]
+{
+    @name = NP_PF_Interstage_375
+    @MODEL
+    {
+        %model = NovaPunch2/Parts/Decouplers/Decoupler_3_75m_stack/model
+        %scale = 0.2913,0.2913,0.2913
+        %position = 0,-0.052,0
+     }
+   
+    %node_stack_top = 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0
+    %node_stack_bottom = 0.0, -0.12, 0.0, 0.0, -1.0, 0.0, 1
+    @title = NP HS-300 Interstage Base
+    @description = Mediumest of the HS series interstage supports.
+}
++PART[KzInterstageAdapter2]:FOR[zPFFE]
+{
+    @name = NP_PF_Interstage_25
+    @MODEL
+    {
+       %model = NovaPunch2/Parts/Decouplers/Decoupler_2_5m_stack/model
+       %scale = 0.4369,0.4369,0.4369
+       %position = 0,-0.052,0
+    }
+    @node_stack_top = 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0
+    @node_stack_bottom = 0.0, -0.12, 0.0, 0.0, -1.0, 0.0, 1
+    @title = NP HS-200 Interstage Base
+    @description = Lightest of the HS series of interstage supports.  
+}
++PART[KzInterstageAdapter2]:FOR[zPFFE]
+{
+    @name = NP_PF_Interstage_125_light
+    @MODEL
+    {
+        @model = NovaPunch2/Parts/Decouplers/Decoupler_125m_Stack_Light/decoupler
+        %scale = 1.080,1.080,1.080
+        %position = 0,-0.288,0
+    }
+    @node_stack_top = 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0
+    @node_stack_bottom = 0.0, -0.360, 0.0, 0.0, -1.0, 0.0, 1
+    @title = NP TK-421 Open Interstage Base
+    @description = An open structure for hot-ignition upper stages.  Use this if you need to start your engines before your previous stage finishes burning.  Gotta keep that fuel at the bottom of the fuel tank, y'know.
+}
