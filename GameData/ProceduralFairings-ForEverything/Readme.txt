@@ -25,6 +25,9 @@ Currently Supported
 
 Licence CC-BY-3.0
 
+Installation
+***Requires*** Procedural Fairings, Firespitter core (the dll), and Module Manager. These are not bundled, so be sure you get them (or install via CKAN).
+
 Known Issues
 
     Procedural Fairings cannot place the "top" node below the fairing start point. KW Expanded Fairings place the payload above the structure. Use the stock offset tool to place the payload onto the structure.
