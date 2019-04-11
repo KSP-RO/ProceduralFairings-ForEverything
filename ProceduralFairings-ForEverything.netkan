@@ -1,26 +1,32 @@
 {
-    "spec_version"  :    1,
-    "identifier"    :    "ProceduralFairings-ForEverything",
-    "$kref"         :    "#/ckan/github/Felger/ProceduralFairings-ForEverything",
-    "name"          :    "Procedural Fairings - For Everything!",
-    "abstract"      :    "Add those awesome Procedural Fairings to everything with a fairing! Supported mods shown in suggestions.",
-    "license"       :    "CC-BY-3.0",
-    "ksp_version"   :    "1.0",
-    "resources"     : {
-        "homepage"  : "http://forum.kerbalspaceprogram.com/threads/126788"
-    },
-    "provides"      : [ "PFTextures" ],
-    "depends"       : [
+    "spec_version"   	: "v1.4",
+    "$kref"          	: "#/ckan/github/Felger/ProceduralFairings-ForEverything",
+    "$vref"          	: "#/ckan/ksp-avc",
+    "x_netkan_force_v"	: true,
+    "name"           	: "Procedural Fairings - For Everything!",
+    "identifier"     	: "ProceduralFairings-ForEverything",
+    "abstract"       	: "Add those awesome Procedural Fairings to everything with a fairing!",
+    "license"        	: "CC-BY-SA",
+    "release_status" 	: "stable",	
+    "depends" : [
         { "name"    : "ModuleManager" },
         { "name"    : "FirespitterCore" },
         { "name"    : "ProceduralFairings" }
     ],
-    "suggests"      : [
+    "suggests"   : [
         { "name"    : "KWRocketry" },
-        { "name"    : "NovaPunch" },
         { "name"    : "VenStockRevamp" }
     ],
-    "install"  : [
+    "provides"  : [ "PFTextures" ],
+    "conflicts" :   [
+        { "name" : "TweakableEverything" },
+        { "name" : "RealPlumeConfigs" },
+        { "name" : "TestFlightConfig" }
+    ],
+    "resources" : {
+        "homepage" : "https://github.com/KSP-RO/ProceduralFairings-ForEverything"
+    },
+    "install" : [
         {
             "file"          : "GameData/ProceduralFairings-ForEverything",
             "install_to"    : "GameData"
