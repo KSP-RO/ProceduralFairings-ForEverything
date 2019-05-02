@@ -1,31 +1,22 @@
 {
     "spec_version"   	: "v1.4",
-    "$kref"          	: "#/ckan/github/Felger/ProceduralFairings-ForEverything",
+    "$kref"          	: "#/ckan/github/KSP-RO/ProceduralFairings-ForEverything",
     "$vref"          	: "#/ckan/ksp-avc",
     "x_netkan_force_v"	: true,
     "name"           	: "Procedural Fairings - For Everything!",
     "identifier"     	: "ProceduralFairings-ForEverything",
     "abstract"       	: "Add those awesome Procedural Fairings to everything with a fairing!",
     "license"        	: "CC-BY-SA",
+    "author"            : [ "Felger", "NathanKell", "Pap1723" ],
     "release_status" 	: "stable",	
-    "depends" : [
+    "depends"       : [
         { "name"    : "ModuleManager" },
-        { "name"    : "FirespitterCore" },
         { "name"    : "ProceduralFairings" }
     ],
-    "suggests"   : [
-        { "name"    : "KWRocketry" },
-        { "name"    : "VenStockRevamp" }
-    ],
-    "provides"  : [ "PFTextures" ],
-    "conflicts" :   [
-        { "name" : "TweakableEverything" },
-        { "name" : "RealPlumeConfigs" },
-        { "name" : "TestFlightConfig" }
-    ],
-    "resources" : {
-        "homepage" : "https://github.com/KSP-RO/ProceduralFairings-ForEverything"
+    "resources"     : {
+        "homepage"  : "https://github.com/KSP-RO/ProceduralFairings-ForEverything"
     },
+    "provides"      : [ "PFTextures" ],
     "install" : [
         {
             "file"          : "GameData/ProceduralFairings-ForEverything",
