@@ -1,7 +1,7 @@
 {
   "NAME"     : "Procedural Fairings - For Everything!",
   "DOWNLOAD" : "https://github.com/KSP-RO/ProceduralFairings-ForEverything/releases",
-  "URL"      : "https://raw.githubusercontent.com/KSP-RO/ProceduralFairings-ForEverything/GameData/ProceduralFairings-ForEverything/ProceduralFairings-ForEverything.version",
+  "URL"      : "https://github.com/KSP-RO/ProceduralFairings-ForEverything/raw/master/GameData/ProceduralFairings-ForEverything/ProceduralFairings-ForEverything.version",
   "GITHUB" : {
       "USERNAME"   : "KSP-RO",
       "REPOSITORY" : "ProceduralFairings-ForEverything"
