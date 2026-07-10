@@ -8,7 +8,6 @@
     "abstract"       	: "Add those awesome Procedural Fairings to everything with a fairing!",
     "license"        	: "CC-BY-SA",
     "author"            : [ "Felger", "NathanKell", "Pap1723" ],
-    "release_status" 	: "stable",	
     "depends"       : [
         { "name"    : "ModuleManager" },
         { "name"    : "ProceduralFairings" }
